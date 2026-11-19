@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "set_id": "onitama.core",
+  "name": "Original Onitama Movement Cards",
+  "version": "1.0.0",
+  "coordinate_system": {
+    "origin": "piece_square",
+    "positive_x": "player_right",
+    "positive_y": "player_forward",
+    "opponent_transform": "rotate_180_degrees",
+    "unit": "one_board_square"
+  },
+  "cards": [
+    {
+      "id": "core.tiger",
+      "name": "Tiger",
+      "starting_player": "blue",
+      "moves": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          -1
+        ]
+      ]
+    },
+    {
+      "id": "core.dragon",
+      "name": "Dragon",
+      "starting_player": "red",
+      "moves": [
+        [
+          -2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "id": "core.frog",
+      "name": "Frog",
+      "starting_player": "red",
+      "moves": [
+        [
+          -1,
+          1
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "id": "core.rabbit",
+      "name": "Rabbit",
+      "starting_player": "blue",
+      "moves": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    },
+    {
+      "id": "core.crab",
+      "name": "Crab",
+      "starting_player": "blue",
+      "moves": [
+        [
+          0,
+          1
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "core.elephant",
+      "name": "Elephant",
+      "starting_player": "red",
+      "moves": [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "core.goose",
+      "name": "Goose",
+      "starting_player": "blue",
+      "moves": [
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "id": "core.rooster",
+      "name": "Rooster",
+      "starting_player": "red",
+      "moves": [
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    },
+    {
+      "id": "core.monkey",
+      "name": "Monkey",
+      "starting_player": "blue",
+      "moves": [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "id": "core.mantis",
+      "name": "Mantis",
+      "starting_player": "red",
+      "moves": [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ]
+    },
+    {
+      "id": "core.horse",
+      "name": "Horse",
+      "starting_player": "red",
+      "moves": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ]
+    },
+    {
+      "id": "core.ox",
+      "name": "Ox",
+      "starting_player": "blue",
+      "moves": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ]
+    },
+    {
+      "id": "core.crane",
+      "name": "Crane",
+      "starting_player": "blue",
+      "moves": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "id": "core.boar",
+      "name": "Boar",
+      "starting_player": "red",
+      "moves": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "id": "core.eel",
+      "name": "Eel",
+      "starting_player": "blue",
+      "moves": [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          -1,
+          -1
+        ]
+      ]
+    },
+    {
+      "id": "core.cobra",
+      "name": "Cobra",
+      "starting_player": "red",
+      "moves": [
+        [
+          1,
+          1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    }
+  ]
+}

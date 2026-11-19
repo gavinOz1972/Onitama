@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/surreal-onitama/schemas/card-set.schema.json",
+  "title": "Onitama Movement Card Set v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "set_id",
+    "name",
+    "version",
+    "coordinate_system",
+    "cards"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "set_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9._-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "coordinate_system": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "origin",
+        "positive_x",
+        "positive_y",
+        "opponent_transform",
+        "unit"
+      ],
+      "properties": {
+        "origin": {
+          "const": "piece_square"
+        },
+        "positive_x": {
+          "const": "player_right"
+        },
+        "positive_y": {
+          "const": "player_forward"
+        },
+        "opponent_transform": {
+          "const": "rotate_180_degrees"
+        },
+        "unit": {
+          "const": "one_board_square"
+        }
+      }
+    },
+    "cards": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "starting_player",
+          "moves"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_-]*\\.[a-z][a-z0-9_-]*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "starting_player": {
+            "enum": [
+              "red",
+              "blue"
+            ]
+          },
+          "moves": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 24,
+            "uniqueItems": true,
+            "items": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "type": "integer",
+                  "minimum": -2,
+                  "maximum": 2
+                },
+                {
+                  "type": "integer",
+                  "minimum": -2,
+                  "maximum": 2
+                }
+              ],
+              "items": false,
+              "minItems": 2,
+              "maxItems": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}

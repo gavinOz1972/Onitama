@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "set_id": "surreal.test",
+  "name": "Surreal test cards",
+  "version": "1.0.0",
+  "coordinate_system": {
+    "origin": "piece_square",
+    "positive_x": "player_right",
+    "positive_y": "player_forward",
+    "opponent_transform": "rotate_180_degrees",
+    "unit": "one_board_square"
+  },
+  "cards": [
+    {
+      "id": "surreal.arc",
+      "name": "Arc",
+      "starting_player": "red",
+      "moves": [
+        [
+          -2,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          -2
+        ]
+      ]
+    },
+    {
+      "id": "surreal.gate",
+      "name": "Gate",
+      "starting_player": "blue",
+      "moves": [
+        [
+          -1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "surreal.hinge",
+      "name": "Hinge",
+      "starting_player": "red",
+      "moves": [
+        [
+          -2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "surreal.ladder",
+      "name": "Ladder",
+      "starting_player": "blue",
+      "moves": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          1,
+          -2
+        ]
+      ]
+    },
+    {
+      "id": "surreal.orbit",
+      "name": "Orbit",
+      "starting_player": "red",
+      "moves": [
+        [
+          2,
+          1
+        ],
+        [
+          -1,
+          2
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "surreal.relay",
+      "name": "Relay",
+      "starting_player": "blue",
+      "moves": [
+        [
+          0,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          -2,
+          -2
+        ],
+        [
+          2,
+          -2
+        ]
+      ]
+    },
+    {
+      "id": "surreal.sweep",
+      "name": "Sweep",
+      "starting_player": "red",
+      "moves": [
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "surreal.wake",
+      "name": "Wake",
+      "starting_player": "blue",
+      "moves": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    }
+  ]
+}
